@@ -101,7 +101,6 @@ const data = [
 const Projects = () => {
   return (
     <div id="projects">
-      <p>main twittor ka ladka hn</p>
       <ProjectAbout />
       <ul className="flex flex-row justify-center flex-wrap">
         {data.map((project) => (
