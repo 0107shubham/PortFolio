@@ -30,14 +30,6 @@ const ProjectItem = (props) => {
     };
   }, [visible]);
 
-  const openModal = () => {
-    setVisible(true);
-  };
-
-  const closeModal = () => {
-    setVisible(false);
-  };
-
   const imageContainer = () => {
     return (
       <motion.div>

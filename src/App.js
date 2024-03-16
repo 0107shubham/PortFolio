@@ -1,6 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-// components
+
 import Projects from "./components/Projects";
 
 import Home from "./components/Home";
