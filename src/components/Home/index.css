@@ -1,0 +1,54 @@
+.bg-container {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.social-handle {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.outer-social {
+  min-width: 144px;
+  width: 20wh;
+}
+
+.icon {
+  font-size: 32px;
+  color: blueviolet;
+}
+
+.para-folder {
+  margin: 20px;
+  width: 40%;
+  height: 65%;
+}
+
+.img-container {
+  width: 40%;
+}
+
+.img {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+}
+
+.name {
+  color: rgb(67, 51, 51);
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.position {
+  color: grey;
+  font-size: 32px;
+}
+
+.skills {
+  color: rgb(44, 30, 30);
+  font-weight: medium;
+  font-size: 24px;
+}

@@ -1,0 +1,5 @@
+.bg-container {
+  background: linear-gradient(to right, #f9ce34, #ee2a7b, hsl(238, 69%, 50%));
+
+  background-size: cover;
+}

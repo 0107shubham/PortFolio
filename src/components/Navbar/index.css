@@ -1,0 +1,29 @@
+.navElement {
+  display: flex;
+  margin: 5px;
+  list-style: none;
+  border: none;
+}
+
+.bg-nav {
+  height: 10%;
+  display: flex;
+  background-color: purple;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+.navElemEach {
+  border-bottom: none;
+  outline: none;
+  text-decoration: none;
+  margin: 5px;
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.bg-container {
+  position: fixed;
+  z-index: 1000;
+  height: 150px;
+}
