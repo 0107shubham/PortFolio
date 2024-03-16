@@ -13,7 +13,7 @@ const ProgressBar = ({ done, start }: any) => {
       };
       setStyle(newStyle);
     }
-  }, [start]);
+  }, [done, start]);
 
   return (
     <div className="progress ">
