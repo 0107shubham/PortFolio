@@ -13,6 +13,7 @@ const Home = () => {
               <a
                 href="https://www.linkedin.com/in/shubhamm-tyagi/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <span className="icon is-medium icon-color ">
                   <BsLinkedin />
@@ -20,7 +21,11 @@ const Home = () => {
               </a>
             </div>
             <div>
-              <a href="https://github.com/0107shubham" target="_blank">
+              <a
+                href="https://github.com/0107shubham"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <span className="icon is-medium icon-color">
                   <BsGithub />
                 </span>

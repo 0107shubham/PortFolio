@@ -70,6 +70,7 @@ const Navbar = () => {
             href={resume_final}
             download="shubham-Resume"
             target="_blank"
+            rel="noreferrer"
           >
             Resume
           </a>
