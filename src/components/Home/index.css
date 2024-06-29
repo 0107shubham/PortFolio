@@ -39,7 +39,6 @@
 .name {
   color: rgb(67, 51, 51);
   font-weight: bold;
-  font-size: 40px;
 }
 
 .position {
@@ -50,5 +49,4 @@
 .skills {
   color: rgb(44, 30, 30);
   font-weight: medium;
-  font-size: 24px;
 }

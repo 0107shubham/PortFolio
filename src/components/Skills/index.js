@@ -29,42 +29,38 @@ const Skills = () => {
       }}
     >
       <div className="">
-        <h1 className="text-center font-bold text-5xl">My Skills</h1>
-      </div>
-
-      <div className="grid grid-cols-6 gap-44">
-        <div></div>
-        <div className="col-span-2">
+        <h1 className="text-center font-bold text-5xl"> My Skills </h1>{" "}
+      </div>{" "}
+      <div className="  grid grid-cols-1 lg:grid-cols-2 gap-8 px-[3.5vw]">
+        <div className="">
           <div>
-            <span className="icon is-large mr-2 icon-color">
-              <i className="ri-braces-fill ri-3x"></i>
-            </span>
-            <h1 className="font-bold text-3xl">Frontend</h1>
-          </div>
+            <h1 className="font-bold text-3xl"> Frontend </h1>{" "}
+          </div>{" "}
           {frontendSkillSet.slice().map((item, index) => (
             <Fragment key={index}>
-              <p className="is-size-5 has-text-weight-semibold">{item.name}</p>
-              <Progressbar done={item.completion} start={startFlag} />
+              <p className="is-size-5 has-text-weight-semibold">
+                {" "}
+                {item.name}{" "}
+              </p>{" "}
+              <Progressbar done={item.completion} start={startFlag} />{" "}
             </Fragment>
-          ))}
-        </div>
-
-        <div className="px-15 col-span-2">
+          ))}{" "}
+        </div>{" "}
+        <div className="">
           <div>
-            <span className="icon is-large mr-2 icon-color">
-              <i className="ri-database-2-fill ri-3x"></i>
-            </span>
-            <h1 className="font-bold text-3xl p-5">Backend</h1>
-          </div>
+            <h1 className="font-bold text-3xl "> Backend </h1>{" "}
+          </div>{" "}
           {backendSkillSet.slice().map((item, index) => (
             <Fragment key={index}>
-              <p className="is-size-5 has-text-weight-semibold">{item.name}</p>
-              <Progressbar done={item.completion} start={startFlag} />
+              <p className="is-size-5 has-text-weight-semibold">
+                {" "}
+                {item.name}{" "}
+              </p>{" "}
+              <Progressbar done={item.completion} start={startFlag} />{" "}
             </Fragment>
-          ))}
-        </div>
-        <div></div>
-      </div>
+          ))}{" "}
+        </div>{" "}
+      </div>{" "}
     </div>
   );
 };
