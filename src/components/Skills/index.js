@@ -21,7 +21,7 @@ const Skills = () => {
 
   return (
     <div
-      className="pt-44 -z-1000 min-h-[90vh] "
+      className="pt-10 lg:pt-44 -z-1000 min-h-[90vh] "
       id="skills"
       onMouseEnter={(e) => {
         e.preventDefault();
@@ -29,7 +29,7 @@ const Skills = () => {
       }}
     >
       <div className="">
-        <h1 className="text-center font-bold text-5xl"> My Skills </h1>{" "}
+        <h1 className="text-center font-bold text-5xl my-5"> My Skills </h1>{" "}
       </div>{" "}
       <div className="  grid grid-cols-1 lg:grid-cols-2 gap-8 px-[3.5vw]">
         <div className="">

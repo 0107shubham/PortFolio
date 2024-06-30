@@ -43,7 +43,7 @@ const ProjectItem = (props) => {
           <img
             src={image}
             alt={`Project ${id}`}
-            className="z-10 h-[220px] w-[450px]"
+            className="z-10 h-[220px] w-[450px] "
           />
         </motion.div>
       </motion.div>
@@ -52,8 +52,8 @@ const ProjectItem = (props) => {
 
   const textContainer = () => {
     return (
-      <div className="textContainer">
-        <div className="bg-blue-600 w-[450px] text-white absolute top-[25%] left-[30%]">
+      <div className=" textContainer bg-yellow-100">
+        <div className="bg-blue-600 w-[450px] text-white absolute  ">
           <motion.div
             initial={{ opacity: 0.5, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}

@@ -31,26 +31,23 @@ const data = [
     cardDetailedText: `As a content moderator focusing on social and political issues at a major social media platform, my primary responsibility involves reviewing user-generated content specifically related to social and political topics..`,
   },
   {
-    title: "2022-Present",
+    title: "2022-2024",
     cardTitle: "Full Stack Development Trainee with MERN Specialization",
     cardSubtitle: "NxtWave Disruptive Technologies - Hyderabad",
     cardDetailedText: `Built several impressive Static, Dynamic and Responsive Website using JS, React and Express
     Solved several problems using Python covering concepts like Functions and Recursion, Strings, Lists, Dictionaries, Sets and Tuples`,
   },
-  // {
-  //   title: "2022-Present",
-  //   cardTitle: "Full Stack Developer",
-  //   cardSubtitle: "Kayrros",
-  //   cardDetailedText: `Worked on Migration of Millions of Data from Excel, Elasticsearch DB, PostgreSQL to modern Schema PostgreSQL DB.
-  //   Worked on developing Modern Frontend Web Portal with multiple routes and API integration. Used Stencil.js for developing web components initially. Later integrated all Web
-  //   components using React and Redux Toolkit. Used Bulma CSS
-  //   library for styling.`,
-  // },
+  {
+    title: "Apr, 2024-Present",
+    cardTitle: "Frontend Developer - Intern ",
+    cardSubtitle: "JP Tech Studeo",
+    cardDetailedText: `Worked on developing a modern frontend web portal with multiple routes and API integrations. Created multiple components and integrated them into the web application using React and Recoil for state management. Utilized Tailwind CSS and the Flowbite library for styling purposes..`,
+  },
 ];
 
 const Qualification = () => {
   return (
-    <div id="qualification" className=" pt-44 ">
+    <div id="qualification" className=" pt-20 lg:pt-44 ">
       <div className="">
         <h1 className="text-center text-5xl font-bold">
           Education & Experience

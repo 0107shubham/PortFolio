@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import final_resume_latest from "../../Asset/final_resume_latest.pdf";
 import { BsLinkedin, BsGithub, BsFillTelephoneFill } from "react-icons/bs";
@@ -14,8 +14,25 @@ const Navbar = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
 
+  // Effect to handle scrolling behavior
+  useEffect(() => {
+    if (isDrawerOpen) {
+      // Prevent scrolling when drawer is open
+      document.body.style.overflow = "hidden";
+    } else {
+      // Allow scrolling when drawer is closed
+      document.body.style.overflow = "auto";
+    }
+
+    // Cleanup function to reset body overflow style
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isDrawerOpen]);
+
   return (
     <div className="w-full">
+      {/*****************************************  mobile ***************************/}
       <div className="w-full  flex items-center  h-[6vw] bg-purple-500 hover:bg-purple-700 focus:ring-4 focus:ring-purple-300  min-h-[60px]">
         <button
           className="text-white text-[16px] w-full flex justify-between px-[2vw]   font-medium rounded-lg text-sm  py-2.5 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
@@ -26,7 +43,7 @@ const Navbar = () => {
         </button>{" "}
       </div>{" "}
       <div
-        className={`fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform transform bg-white w-[80%] max-w-[310px]  dark:bg-gray-800 ${
+        className={`fixed top-0 left-0   w-[80%] max-w-[310px]  bg-white z-40 h-screen p-4 overflow-y-auto transition-transform transform  dark:bg-gray-800 ${
           isDrawerOpen ? "translate-x-0" : "-translate-x-full"
         }`}
         tabIndex="-1"
@@ -168,7 +185,8 @@ const Navbar = () => {
             </div>{" "}
           </div>{" "}
         </ul>{" "}
-      </div>{" "}
+      </div>
+      {/* ********************************   desktop     ********************/}
       <div className="hidden lg:flex justify-between p-5 fixed top-0 left-0 right-0 z-50 h-24 bg-purple-500">
         <div>
           <h1 className="text-white font-bold text-2xl"> Shubham Tyagi </h1>{" "}
